@@ -81,17 +81,8 @@ on your device:</p>
 the app.</p>
 
 <h2>What leaves your device</h2>
-<p>Three things, and nothing else.</p>
-
-<p><strong>The typeface.</strong> The app loads the IBM Plex typeface from Google
-Fonts (<code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>) when
-it opens. Like any request to a website, this tells Google the IP address of your
-device and the standard headers Android sends with it. It carries none of your
-data — no names, dates, trackers or settings — and Google receives nothing that
-identifies you as a user of this app in particular. The files are cached after
-the first load. Google describes how it handles these requests in its
-<a href="https://developers.google.com/fonts/faq/privacy">Google Fonts privacy
-FAQ</a>.</p>
+<p>Two things, and nothing else. The typeface the app is set in ships inside it,
+so opening the app asks nothing of the network at all.</p>
 
 <p><strong>Backups you export yourself.</strong> When you tap “Export a backup”,
 the app writes a file and hands it to your phone's share sheet. Where it goes
@@ -123,7 +114,7 @@ lock screen. Your phone's notification settings control that.</p>
 <table>
   <tr><th>Notifications</th><td>To deliver the reminders you set. Asked for on first launch; refusing it leaves the rest of the app working.</td></tr>
   <tr><th>Run at startup</th><td>So reminders scheduled before a restart survive it. Without this, every pending reminder is lost when the phone reboots.</td></tr>
-  <tr><th>Internet</th><td>Used to load the typeface and to reach Google Play for the purchase, both described above.</td></tr>
+  <tr><th>Internet</th><td>Used to reach Google Play for the purchase, described above.</td></tr>
   <tr><th>Google Play billing</th><td>Lets the full version be bought and restored through Google Play.</td></tr>
 </table>
 <p>The app asks for no access to your contacts, location, camera, microphone,
