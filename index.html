@@ -75,14 +75,17 @@ on your device:</p>
   <li>the trackers under them, with their renewal dates, cycles and reminder lead times</li>
   <li>the country you attach to a tracker</li>
   <li>the history of when you renewed each tracker</li>
-  <li>your settings: language, default country, reminder time and repeat</li>
+  <li>your settings: language, theme, default country, reminder time and repeat</li>
+  <li>two dates about the full version: the last day Google Play confirmed it,
+  and the latest day the app was opened</li>
 </ul>
 <p>Android keeps this storage private to the app. It is removed when you delete
 the app.</p>
 
 <h2>What leaves your device</h2>
 <p>Two things, and nothing else. The typeface the app is set in ships inside it,
-so opening the app asks nothing of the network at all.</p>
+so the only thing opening the app asks of the network is the Google Play check
+described below.</p>
 
 <p><strong>Backups you export yourself.</strong> When you tap “Export a backup”,
 the app writes a file and hands it to your phone's share sheet. Where it goes
@@ -93,10 +96,13 @@ pick, and nothing else.</p>
 
 <p><strong>The full version.</strong> The free version holds one subject. Unlocking
 more is a yearly subscription made through Google Play, which handles the payment
-entirely — the app never sees your card or payment details. To know whether
-the full version is unlocked, the app asks Google Play whether the Google
-account on this phone has the subscription — each time it opens, and
-whenever you tap subscribe or restore — and keeps only the date of the last yes, on the device. Google shares with
+entirely — the app never sees your card or payment details. The full version can
+also be given for good with a Google Play promo code, redeemed in the Play Store.
+To know whether the full version is unlocked, the app asks Google Play whether
+the Google account on this phone owns either — each time it opens, and whenever
+you tap subscribe or restore. When it finds a new unlock it confirms it back to
+Google Play, which Play requires so the purchase is not refunded. It keeps only
+the date of the last yes, on the device. Google shares with
 us the order records it provides to every developer for payments and refunds.
 Google describes its own handling of purchases in the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
@@ -114,7 +120,9 @@ lock screen. Your phone's notification settings control that.</p>
 <table>
   <tr><th>Notifications</th><td>To deliver the reminders you set. Asked for on first launch; refusing it leaves the rest of the app working.</td></tr>
   <tr><th>Run at startup</th><td>So reminders scheduled before a restart survive it. Without this, every pending reminder is lost when the phone reboots.</td></tr>
+  <tr><th>Keep the device awake</th><td>Lets a reminder that falls due while the phone is idle finish being delivered.</td></tr>
   <tr><th>Internet</th><td>Used to reach Google Play for the purchase, described above.</td></tr>
+  <tr><th>View network connections</th><td>Used by Google Play's billing library to tell whether Play can be reached before it asks.</td></tr>
   <tr><th>Google Play billing</th><td>Lets the full version be bought and restored through Google Play.</td></tr>
 </table>
 <p>The app asks for no access to your contacts, location, camera, microphone,
